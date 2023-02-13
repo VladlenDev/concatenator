@@ -18,12 +18,18 @@
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Calculator.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Concatenation.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
     <ClInclude Include="Calculator.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="MathOperator.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
   </ItemGroup>

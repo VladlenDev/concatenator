@@ -2,15 +2,12 @@
 
 #include <cmath>
 
-using namespace std;
-
 long int concatenate(long int a, long int b) {
-	int answer = -1, bOrder = 0;
-
-	for (int bNew = b; bNew != 0; bOrder++) {
+	int answer = -1;
+	size_t bOrder = 0;
+	for (size_t bNew = b; bNew != 0; bOrder++) {
 		bNew /= 10;
 	}
-
 	if (b == 0) {
 		answer = a * 10;
 	}
@@ -23,6 +20,5 @@ long int concatenate(long int a, long int b) {
 	else {
 		answer = a * pow(10, bOrder) + b;
 	}
-
 	return answer;
 }
