@@ -22,3 +22,13 @@ long int concatenate(long int a, long int b) {
 	}
 	return answer;
 }
+
+class ConcLongInt {
+private:
+	long int value;
+public:
+	ConcLongInt(long int i): value(i) {}
+	long int operator || (long int b) {
+		return concatenate(this->value, b);
+	}
+};

@@ -189,7 +189,7 @@ long int Calculator::calculate_operation(std::string op) {
 		answ = fOperand / lOperand;
 		break;
 	case '|':
-		answ = concatenate(fOperand, lOperand);
+		answ = ConcLongInt(fOperand) || lOperand;
 		break;
 	}
 	//	return result
